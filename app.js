@@ -85,3 +85,49 @@ function init(){
 }
 
 init()
+
+$('.projects').click(()=>{
+    $('#sloped-back').removeClass('slop-change1')
+    $('body').removeClass('body-back1')
+    $('#sloped-back').removeClass('slop-change2')
+    $('body').removeClass('body-back2')
+    $('#sloped-back').removeClass('slop-change3')
+    $('body').removeClass('body-back3')
+})
+// $('.projects').click(()=>{
+//     $('#sloped-back').addClass('slop-change1')
+//     $('body').addClass('body-back1')
+//     $('#sloped-back').removeClass('slop-change2')
+//     $('body').removeClass('body-back2')
+//     $('#sloped-back').removeClass('slop-change3')
+//     $('body').removeClass('body-back3')
+// })
+$('.experiences').click(()=>{
+    $('#sloped-back').removeClass('slop-change1')
+    $('body').removeClass('body-back1')
+    $('#sloped-back').addClass('slop-change2')
+    $('body').addClass('body-back2')
+    $('#sloped-back').removeClass('slop-change3')
+    $('body').removeClass('body-back3')
+})
+$('.skills').click(()=>{
+    $('#sloped-back').removeClass('slop-change1')
+    $('body').removeClass('body-back1')
+    $('#sloped-back').removeClass('slop-change2')
+    $('body').removeClass('body-back2')
+    $('#sloped-back').addClass('slop-change3')
+    $('body').addClass('body-back3')
+})
+
+$(document).ready(()=>{
+    $('.sidenav').sidenav()
+    $('.parallax').parallax()
+    $('.tabs').tabs();
+})
+
+
+$('.lang').click((e) => {
+    $('#title').text(I18N[e.target.dataset.lang].Title)
+    $('#introduction').text(I18N[e.target.dataset.lang].Introduction)
+})
+

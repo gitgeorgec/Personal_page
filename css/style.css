@@ -4,23 +4,67 @@ html {
 body {
   min-height: 100vh;
   margin: 0;
-  background: linear-gradient()
+  transition: 1s
 }
 
 #back {
   position: fixed;
+}
+#sloped-back{
+  height:250vh;
+  width: 250vw;
+  position: fixed;
+  transform-origin: top left;
+  background: rgb(248, 2, 2);
+  z-index: -1;
+  transition:0.1s;
+  transform: rotate(45deg);
+}
+
+.slop-change1{
+  right:0;
+  transform: rotate(-45deg) !important;
+  background: rgb(117, 117, 117) !important;
+  transform-origin: top right !important;
+  transition:0.1s;
+}
+
+
+.slop-change2{
+  right:0;
+  bottom:0;
+  transform: rotate(-45deg) !important;
+  background: rgb(255, 156, 156) !important;
+  transform-origin: bottom right !important;
+  transition:0.1s;
+}
+.slop-change3{
+  bottom:0;
+  transform: rotate(45deg) !important;
+  background: rgb(238, 223, 164) !important;
+  transform-origin: bottom left !important;
+  transition:0.1s;
+}
+
+.body-back1{
+  background: yellow
+}
+.body-back2{
+  background: rgb(199, 84, 245)
+}
+.body-back3{
+  background: rgb(2, 190, 11)
 }
 
 .position-relative {
   position: relative;
 }
 
-
 .timeline::before{
   content: "";
   display:block;
   position: absolute;
-  height: 400px;
+  height: 500px;
   right: calc(50% - 5px);
   border-left: 10px solid rgba(0, 67, 252, 0.527);
 }
@@ -29,8 +73,10 @@ body {
   position: relative;
 }
 
-.timeline-content {
-  margin: 10px
+.timeline-event .timeline-content {
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 150px;
 }
 
 .timeline-badge {
@@ -47,11 +93,27 @@ body {
   top:calc(50% - 30px)
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .timeline::before{
     left: 18px;
   }
   .timeline-badge {
     left: -20px;
   }
+}
+
+.tabs .indicator {
+  background-color: #1a237e
+}
+
+.tabs .tab a:focus, .tabs .tab a:focus.active{
+  background-color: transparent;
+  color: #1a237e;
+}
+.tabs .tab a:hover, .tabs .tab a.active{
+  color: #1a237e;
+}
+
+.tabs .tab a{
+  color: #1a237e;
 }
