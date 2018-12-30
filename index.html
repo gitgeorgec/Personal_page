@@ -41,7 +41,7 @@
         <!-- introduction -->
         <div class="col s12" id="about" style="margin-top:30px">
           <div class="center-block">
-            <img class="responsive-img circle center-block position-relative" src="./img/jamie-street-804224-unsplash.jpg" alt="" width="150px">
+            <img class="responsive-img circle center-block position-relative" src="./img/jamie-street-804224-unsplash.jpg" alt="" width="150px" id="MyPhoto">
             <h4 class="center-block center position-relative" id="title">hello</h4>
             
           </div>
@@ -57,13 +57,13 @@
         </div>
       </div> -->
         <ul class="tabs center transparent">
-            <li class="tab projects"><a href="#projects">projects</a></li>
-            <li class="tab experiences"><a href="#experiences">experiences</a></li>
-            <li class="tab skills"><a href="#skills">skills</a></li>
+            <li class="tab projects"><a class="projects-title" href="#projects">projects</a></li>
+            <li class="tab experiences"><a class="experiences-title" href="#experiences">experiences</a></li>
+            <li class="tab skills"><a class="skill-title" href="#skills">skills</a></li>
         </ul>
         <!-- projects   -->
         <div class="col s12 row" id="projects">
-          <h1 class="position-relative">projects</h1>
+          <h1 class="position-relative projects-title">PROJECTS</h1>
           <hr>
           <!-- <ul class="tabs center transparent">
             <li class="tab"><a href="#project1">project1</a></li>
@@ -114,19 +114,19 @@
 
         <!-- experience  -->
         <div class="col s12" id="experiences">
-          <h1 class="position-relative">experience</h1>
+          <h1 class="position-relative experiences-title">EXPERIENCES</h1>
           <hr>
           <div class="timeline row">
             <div class="timeline-event col s12 m6 offset-m6 ">
               <div class="blue white-text btn-floating activator timeline-badge "><i class="material-icons">language</i></div>
               <div class="card timeline-content">
                 <div class="card-content">
-                  <span class="card-title activator grey-text text-darken-4">2018 年 3 月 - 至今<i class="material-icons right">more_vert</i></span>
-                  <p>自學前端技術</p>
+                  <span class="card-title activator grey-text text-darken-4" id="experience3">2018 MARCH - NOW<i class="material-icons right">more_vert</i></span>
+                  <p id="experience3-title">LEARNING FRONTEND SKILLS</p>
                 </div>  
                 <div class="card-reveal">
                   <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                  <p>自學前端技術</p>
+                  <p id="experience3-content">LEARNING FRONTEND SKILLS</p>
                 </div>
               </div>
             </div>
@@ -135,12 +135,12 @@
               <div class="red white-text btn-floating activator timeline-badge "><i class="material-icons">work</i></div>
               <div class="card timeline-content">
                 <div class="card-content">
-                  <span class="card-title activator grey-text text-darken-4">2016 年 4 月 - 2018 年 3 月<i class="material-icons right">more_vert</i></span>
-                  <p>T.Y.LIN 美商同棪國際工程顧問股份公司 台灣分公司 擔任結構工程師.</p>
+                  <span class="card-title activator grey-text text-darken-4" id="experience2">2016 APRIL - 2018 MARCH<i class="material-icons right">more_vert</i></span>
+                  <p id="experience2-title">T.Y.LIN INTERNATIONAL TAIWAN BRANCH serves as structural engineer.</p>
                 </div>
                 <div class="card-reveal">
                   <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                  <p>T.Y.LIN 美商同棪國際工程顧問股份公司 台灣分公司 擔任結構工程師.</p>
+                  <p id="experience2-content">T.Y.LIN INTERNATIONAL TAIWAN BRANCH serves as structural engineer.</p>
                 </div>
               </div>
             </div>
@@ -149,12 +149,12 @@
               <div class="green white-text btn-floating activator timeline-badge "><i class="fas fa-user-graduate"></i></div>
               <div class="card timeline-content">
                 <div class="card-content">
-                  <span class="card-title activator grey-text text-darken-4">2009 年 9 月 - 2014 年 7 月<i class="material-icons right">more_vert</i></span>
-                  <p>交通大學土木工程學系 交通大學土木工程結構組.</p>
+                  <span class="card-title activator grey-text text-darken-4" id="experience1">2009 SEPTEMBER - 2014 JULY<i class="material-icons right">more_vert</i></span>
+                  <p id="experience1-title">Department of Civil Engineering in National Chiao Tung University.  交通大學土木工程所結構組.</p>
                 </div>
                 <div class="card-reveal">
                   <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                  <p>交通大學土木工程學系 交通大學土木工程結構組.</p>
+                  <p id="experience1-content">Department of Civil Engineering in National Chiao Tung University. 交通大學土木工程所結構組.</p>
                 </div>
               </div>
             </div>
@@ -163,35 +163,35 @@
         </div>
         <!-- skill -->
         <div class="col s12" id="skills">
-          <h1 class="position-relative">skill</h1>
+          <h1 class="position-relative skill-title">SKILLS</h1>
           <hr>
           <div class="row">
             <div class="col s12 l4">
-              <h3 class="position-relative" >fontend skill</h3>
+              <h4 class="position-relative" id="skill1-title">FRONTEND SKILLS</h4>
               <hr>
               <ul class="position-relative">
-                <li><h4>JavaScript<i class="fab fa-js yellow"></i></h4></li>
-                <li><h4>HTML5<i class="fab fa-html5 orange-text"></i></h4></li>
-                <li><h4>CSS3<i class="fab fa-css3-alt blue-text"></i></h4></li>
-                <li><h4>React<i class="fab fa-react purple-text"></i></h4></li>
-                <li><h4>React-redux</h4></li>
-                <li><h4>Boostrap4</h4></li>
+                <li><h5>JavaScript <i class="fab fa-js yellow"></i></h5></li>
+                <li><h5>HTML5 <i class="fab fa-html5 orange-text"></i></h5></li>
+                <li><h5>CSS3 <i class="fab fa-css3-alt blue-text"></i></h5></li>
+                <li><h5>React <i class="fab fa-react purple-text"></i></h5></li>
+                <li><h5>React-redux</h5></li>
+                <li><h5>Boostrap4</h5></li>
               </ul>
             </div>
             <div class="col s12 l4">
-              <h3 class="position-relative">backend skill</h3>
+              <h4 class="position-relative" id="skill2-title">BACKEND SKILLS</h4>
               <hr>
               <ul class="position-relative">
-                <li><h4>node <i class="fab fa-node green-text"></i></h4></li>
-                <li><h4>express</h4></li>
-                <li><h4>mongodb</h4></li>
+                <li><h5>node <i class="fab fa-node green-text"></i></h5></li>
+                <li><h5>express</h5></li>
+                <li><h5>mongodb</h5></li>
               </ul>
             </div>
             <div class="col s12 l4">
-              <h3 class="position-relative">language</h3>
+              <h4 class="position-relative" id="skill3-title">LANGUAGE</h4>
               <hr>
               <ul class="position-relative">
-                <li><h4>english:toeic 910</h4></li>
+                <li><h5>ENGLISH:TOEIC 910</h5></li>
                 <img class="responsive-img" src="./img/felix-mooneeram-222805-unsplash-compressor.jpg" alt="">
               </ul>
             </div>

@@ -1,3 +1,4 @@
+// background bubble
 const canvas = document.querySelector('#back')
 const ctx = canvas.getContext('2d');
 let circles = []
@@ -85,7 +86,9 @@ function init(){
 }
 
 init()
+//
 
+//background change
 $('.projects').click(()=>{
     $('#sloped-back').removeClass('slop-change1')
     $('body').removeClass('body-back1')
@@ -118,16 +121,58 @@ $('.skills').click(()=>{
     $('#sloped-back').addClass('slop-change3')
     $('body').addClass('body-back3')
 })
+//
 
+//materialize setting
 $(document).ready(()=>{
     $('.sidenav').sidenav()
     $('.parallax').parallax()
     $('.tabs').tabs();
 })
+//
 
-
+//lang change
 $('.lang').click((e) => {
     $('#title').text(I18N[e.target.dataset.lang].Title)
     $('#introduction').text(I18N[e.target.dataset.lang].Introduction)
+    $('.projects-title').text(I18N[e.target.dataset.lang].projectsTitle)
+    $('.experiences-title').text(I18N[e.target.dataset.lang].experiencesTitle)
+    $('#experience1').text(I18N[e.target.dataset.lang].experience1)
+    $('#experience1-title').text(I18N[e.target.dataset.lang].experience1Title)
+    $('#experience1-content').text(I18N[e.target.dataset.lang].experience1Content)
+    $('#experience2').text(I18N[e.target.dataset.lang].experience2)
+    $('#experience2-title').text(I18N[e.target.dataset.lang].experience2Title)
+    $('#experience2-content').text(I18N[e.target.dataset.lang].experience2Content)
+    $('#experience3').text(I18N[e.target.dataset.lang].experience3)
+    $('#experience3-title').text(I18N[e.target.dataset.lang].experience3Title)
+    $('#experience3-content').text(I18N[e.target.dataset.lang].experience3Content)
+    $('.skill-title').text(I18N[e.target.dataset.lang].skillTitle)
+    $('#skill1-title').text(I18N[e.target.dataset.lang].skill1Title)
+    $('#skill2-title').text(I18N[e.target.dataset.lang].skill2Title)
+    $('#skill3-title').text(I18N[e.target.dataset.lang].skill3Title)
 })
+//
 
+//shadow effect
+// const shadow = document.querySelector("#about")
+// const word = document.querySelector("#about h4")
+// function shadowEffect(e){
+//     const width = shadow.offsetWidth
+//     const height = shadow.offsetHeight
+//     let x = e.offsetX
+//     let y = e.offsetY
+//     if(this !== e.target){
+//         x = x + e.target.offsetLeft
+//         y = y + e.target.offsetTop
+//     }
+//     walkx = Math.floor((x - width/2)/50)
+//     walky = Math.floor((y - height/2)/50)
+//     word.style.shadow = `${-walkx}px ${-walky}px 0 rgba(0,0,0, 0.6)`
+// }
+
+// shadow.addEventListener("mousemove", shadowEffect)
+
+$('body').on('mousemove', (e)=>{
+    $('#MyPhoto').css("box-shadow", `${(e.clientX - canvas.width/2)/50}px ${(e.clientY - canvas.height/2)/50}px 0 rgba(0,0,0, 0.6)`)
+    $('#MyPhoto').css("transform", `skewX(${(mouse.x - canvas.width/2)/50}deg) skewY(${(mouse.y - canvas.height/2)/50}deg`)
+})
