@@ -2,10 +2,10 @@
   "name": "Personal_page",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "browser-sync start --server --files='./*.js, ./css/*.css, ./*.html'"
+    "start": "webpack"
   },
   "repository": {
     "type": "git",
@@ -17,5 +17,18 @@
   "bugs": {
     "url": "https://github.com/gitgeorgec/Personal_page/issues"
   },
-  "homepage": "https://github.com/gitgeorgec/Personal_page#readme"
+  "homepage": "https://github.com/gitgeorgec/Personal_page#readme",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "babel-loader": "^8.0.4",
+    "browser-sync": "^2.26.3",
+    "browser-sync-webpack-plugin": "^2.2.2",
+    "webpack": "^4.28.3",
+    "webpack-cli": "^3.1.2"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "materialize-css": "^1.0.0"
+  }
 }

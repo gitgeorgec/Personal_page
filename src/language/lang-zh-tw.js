@@ -1,5 +1,5 @@
-if(!window.I18N) window.I18N = {}
-window.I18N['zh-tw'] = {
+// zh-tw
+module.exports = {
     Title:'張佳哲',
     Introduction:'我是張佳哲',
     projectsTitle:'作品集',

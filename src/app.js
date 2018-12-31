@@ -1,4 +1,8 @@
 // background bubble
+const I18N = {
+    'en':require('./language/lang-en'),
+    'zh-tw':require('./language/lang-zh-tw')
+}
 const canvas = document.querySelector('#back')
 const ctx = canvas.getContext('2d');
 let circles = []
@@ -76,10 +80,10 @@ function animate(){
 function init(){
     circles = []
     for(let i = 0; i<1000; i++){
-        x = Math.random()*window.innerWidth
-        y = Math.random()*window.innerHeight
-        dx = Math.random()*(Math.round(Math.random()) * 2 - 1)*3
-        dy = Math.random()*(Math.round(Math.random()) * 2 - 1)*3
+        let x = Math.random()*window.innerWidth
+        let y = Math.random()*window.innerHeight
+        let dx = Math.random()*(Math.round(Math.random()) * 2 - 1)*3
+        let dy = Math.random()*(Math.round(Math.random()) * 2 - 1)*3
         circles.push(new Circle(x,y,dx,dy,1))
     }
     animate()
@@ -130,7 +134,7 @@ $(document).ready(()=>{
     $('.tabs').tabs();
 })
 //
-
+ 
 //lang change
 $('.lang').click((e) => {
     $('#title').text(I18N[e.target.dataset.lang].Title)
@@ -154,25 +158,46 @@ $('.lang').click((e) => {
 //
 
 //shadow effect
-// const shadow = document.querySelector("#about")
-// const word = document.querySelector("#about h4")
-// function shadowEffect(e){
-//     const width = shadow.offsetWidth
-//     const height = shadow.offsetHeight
-//     let x = e.offsetX
-//     let y = e.offsetY
-//     if(this !== e.target){
-//         x = x + e.target.offsetLeft
-//         y = y + e.target.offsetTop
-//     }
-//     walkx = Math.floor((x - width/2)/50)
-//     walky = Math.floor((y - height/2)/50)
-//     word.style.shadow = `${-walkx}px ${-walky}px 0 rgba(0,0,0, 0.6)`
-// }
-
-// shadow.addEventListener("mousemove", shadowEffect)
 
 $('body').on('mousemove', (e)=>{
     $('#MyPhoto').css("box-shadow", `${(e.clientX - canvas.width/2)/50}px ${(e.clientY - canvas.height/2)/50}px 0 rgba(0,0,0, 0.6)`)
-    $('#MyPhoto').css("transform", `skewX(${(mouse.x - canvas.width/2)/50}deg) skewY(${(mouse.y - canvas.height/2)/50}deg`)
+    $('#MyPhoto').css("transform", `skewX(${(e.clientX - canvas.width/2)/50}deg) skewY(${(e.clientX- canvas.height/2)/50}deg`)
+})
+
+//project hover effect
+$('#project1').hover(()=>{
+    $('#project1 .project-introduction').toggleClass('transparent transparent-text')
+})
+$('#project2').hover(()=>{
+    $('#project2 .project-introduction').toggleClass('transparent transparent-text')
+})
+$('#project3').hover(()=>{
+    $('#project3 .project-introduction').toggleClass('transparent transparent-text')
+})
+
+
+//open project websit on new tab
+$('#project1').click(()=>{
+    var win = window.open('https://evening-earth-94594.herokuapp.com/', '_blank');
+    if (win) {
+        win.focus();
+    } else {
+        alert('Please allow popups for this website');
+    }
+})
+$('#project2').click(()=>{
+    var win = window.open('https://gitgeorgec.github.io/music-store/', '_blank');
+    if (win) {
+        win.focus();
+    } else {
+        alert('Please allow popups for this website');
+    }
+})
+$('#project3').click(()=>{
+    var win = window.open('https://gitgeorgec.github.io/rent-house/', '_blank');
+    if (win) {
+        win.focus();
+    } else {
+        alert('Please allow popups for this website');
+    }
 })
