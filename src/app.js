@@ -132,6 +132,16 @@ $(document).ready(()=>{
     $('.sidenav').sidenav()
     $('.parallax').parallax()
     $('.tabs').tabs();
+    $('.modal').modal({
+        'onOpenEnd': initCarouselModal
+    });
+
+    function initCarouselModal() {
+        $('.carousel.carousel-slider').carousel({
+                    fullWidth: true,
+                    indicators: true,
+                })
+    }
 })
 //
  
@@ -160,8 +170,8 @@ $('.lang').click((e) => {
 //shadow effect
 
 $('body').on('mousemove', (e)=>{
-    $('#MyPhoto').css("box-shadow", `${(e.clientX - canvas.width/2)/50}px ${(e.clientY - canvas.height/2)/50}px 0 rgba(0,0,0, 0.6)`)
-    $('#MyPhoto').css("transform", `skewX(${(e.clientX - canvas.width/2)/50}deg) skewY(${(e.clientX- canvas.height/2)/50}deg`)
+    $('#MyPhoto').css("box-shadow", `${-(e.clientX - canvas.width/2)/50}px ${-(e.clientY - canvas.height/2)/50}px 0 rgba(0,0,0, 0.6)`)
+    $('#MyPhoto').css("transform", `skewX(${(e.clientX - canvas.width/2)/200}deg) skewY(${(e.clientX- canvas.height/2)/200}deg`)
 })
 
 //project hover effect
@@ -175,29 +185,28 @@ $('#project3').hover(()=>{
     $('#project3 .project-introduction').toggleClass('transparent transparent-text')
 })
 
-
 //open project websit on new tab
-$('#project1').click(()=>{
-    var win = window.open('https://evening-earth-94594.herokuapp.com/', '_blank');
-    if (win) {
-        win.focus();
-    } else {
-        alert('Please allow popups for this website');
-    }
-})
-$('#project2').click(()=>{
-    var win = window.open('https://gitgeorgec.github.io/music-store/', '_blank');
-    if (win) {
-        win.focus();
-    } else {
-        alert('Please allow popups for this website');
-    }
-})
-$('#project3').click(()=>{
-    var win = window.open('https://gitgeorgec.github.io/rent-house/', '_blank');
-    if (win) {
-        win.focus();
-    } else {
-        alert('Please allow popups for this website');
-    }
-})
+// $('#project1 .btn').click(()=>{
+//     var win = window.open('https://evening-earth-94594.herokuapp.com/', '_blank');
+//     if (win) {
+//         win.focus();
+//     } else {
+//         alert('Please allow popups for this website');
+//     }
+// })
+// $('#project2 .btn').click(()=>{
+//     var win = window.open('https://gitgeorgec.github.io/music-store/', '_blank');
+//     if (win) {
+//         win.focus();
+//     } else {
+//         alert('Please allow popups for this website');
+//     }
+// })
+// $('#project3 .btn').click(()=>{
+//     var win = window.open('https://gitgeorgec.github.io/rent-house/', '_blank');
+//     if (win) {
+//         win.focus();
+//     } else {
+//         alert('Please allow popups for this website');
+//     }
+// })
