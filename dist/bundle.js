@@ -226,8 +226,13 @@ $(document).ready(function () {
   $('.modal').modal({
     'onOpenEnd': initCarouselModal
   });
+  $('.tabs').tabs({
+    'onShow': initCarouselModal
+  }); // $('.carousel').carousel()
+  // $('.carousel.carousel-slider').carousel();
 
   function initCarouselModal() {
+    $('.carousel').carousel();
     $('.carousel.carousel-slider').carousel({
       fullWidth: true,
       indicators: true
@@ -271,30 +276,34 @@ $('#project2').hover(function () {
 $('#project3').hover(function () {
   $('#project3 .project-introduction').toggleClass('transparent transparent-text');
 }); //open project websit on new tab
-// $('#project1 .btn').click(()=>{
-//     var win = window.open('https://evening-earth-94594.herokuapp.com/', '_blank');
-//     if (win) {
-//         win.focus();
-//     } else {
-//         alert('Please allow popups for this website');
-//     }
-// })
-// $('#project2 .btn').click(()=>{
-//     var win = window.open('https://gitgeorgec.github.io/music-store/', '_blank');
-//     if (win) {
-//         win.focus();
-//     } else {
-//         alert('Please allow popups for this website');
-//     }
-// })
-// $('#project3 .btn').click(()=>{
-//     var win = window.open('https://gitgeorgec.github.io/rent-house/', '_blank');
-//     if (win) {
-//         win.focus();
-//     } else {
-//         alert('Please allow popups for this website');
-//     }
-// })
+
+$('#movieBlog-link').click(function () {
+  var win = window.open('https://evening-earth-94594.herokuapp.com/', '_blank');
+
+  if (win) {
+    win.focus();
+  } else {
+    alert('Please allow popups for this website');
+  }
+});
+$('#musicStore-link').click(function () {
+  var win = window.open('https://gitgeorgec.github.io/music-store/', '_blank');
+
+  if (win) {
+    win.focus();
+  } else {
+    alert('Please allow popups for this website');
+  }
+});
+$('#rentHouse-link').click(function () {
+  var win = window.open('https://gitgeorgec.github.io/rent-house/', '_blank');
+
+  if (win) {
+    win.focus();
+  } else {
+    alert('Please allow popups for this website');
+  }
+});
 
 /***/ }),
 /* 1 */
