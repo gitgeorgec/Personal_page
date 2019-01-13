@@ -1,7 +1,7 @@
 // zh-tw
 module.exports = {
     Title:'張佳哲',
-    Introduction:'我是張佳哲',
+    Introduction:'我是一個熱愛學習，喜歡嘗試新事物的人，目前朝向前端工程師邁進。出社會後第一份工作與所學相關，於工程顧問公司擔任結構工程師，負責分析與設計橋樑結構。工作近兩年，但後來發現完成協助工作的小程式增加工作效率比完成工作本身更令我有成就感，故決定離開熟悉的產業，學習程式，希望能讓自己找到志趣相合的工作。',
     projectsTitle:'作品集',
     experiencesTitle:'經歷',
     experience1:"2009 年 9 月 - 2014 年 7 月",
@@ -16,5 +16,8 @@ module.exports = {
     skillTitle:"技能",
     skill1Title:"前端技能",
     skill2Title:"後端技能",
-    skill3Title:"語言"
+    skill3Title:"語言",
+    project1Intro:"練習專案，為電影部落格。 <br>使用者可收尋喜歡的電影，觀賞預告片，登入後可給撰寫觀影心得，也可在其他心得下給予回應。 <br>串接TMDB api 取得電影資料 <br>使用 html5 css3 javascript express ejs <br>資料庫使用 mongoDB",
+    project2Intro:"練習專案，為虛擬音樂購物網站。 <br>使用者可收尋喜歡的音樂專輯或單曲，放入購物車後結帳購買，購買後可於帳號看到購買內容。 <br>串接spotify api 取得音樂資料 strip 處理信用卡交易<br>前端使用 react <br>後端使用 express<br>資料庫使用 mongoDB ",
+    project3Intro:"練習專案，為簡易版租屋平台。 <br>使用者可選擇日期與地點收尋可使用的房屋，也可成為房東上傳自己的房屋。房屋地點會顯示於 google map 上。登入機制可使用 facebook 建立帳號也可自己設定。 <br>串接使用 google map 與 facebook OAuth api <br>前端使用 react-redux <br>後端使用 express <br>資料庫使用 mongodb "
 }

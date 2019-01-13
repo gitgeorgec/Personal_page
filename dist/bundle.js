@@ -259,6 +259,9 @@ $('.lang').click(function (e) {
   $('#skill1-title').text(I18N[e.target.dataset.lang].skill1Title);
   $('#skill2-title').text(I18N[e.target.dataset.lang].skill2Title);
   $('#skill3-title').text(I18N[e.target.dataset.lang].skill3Title);
+  $('#project1Intro').html(I18N[e.target.dataset.lang].project1Intro);
+  $('#project2Intro').html(I18N[e.target.dataset.lang].project2Intro);
+  $('#project3Intro').html(I18N[e.target.dataset.lang].project3Intro);
 }); //
 //shadow effect
 
@@ -319,15 +322,18 @@ module.exports = {
   experience1Title: "Department of Civil Engineering in National Chiao Tung University 交通大學土木工程結構組",
   experience1Content: "Department of Civil Engineering in National Chiao Tung University 交通大學土木工程結構組",
   experience2: "2016 APRIL - 2018 MARCH",
-  experience2Title: "T.Y.LIN INTERNATIONAL TAIWAN BRANCH serves as structural engineer.",
-  experience2Content: "T.Y.LIN INTERNATIONAL TAIWAN BRANCH serves as structural engineer.",
+  experience2Title: "T.Y.LIN 美商同棪國際工程顧問股份公司台灣分公司，擔任結構工程師",
+  experience2Content: "期間完成國道高速公路耐震補強與重慶高速公路橋樑設計兩項專案，曾協助團隊完成分析流程的自動化，團隊的工作效率因此提升，得以在的專案時程內順利完成專案．",
   experience3: "2018 MARCH - NOW",
   experience3Title: "LEARNING FRONTEND SKILLS",
-  experience3Content: "LEARNING FRONTEND SKILLS",
+  experience3Content: "使用網路資源如Udemy、codecademy、freecodecamp等自學javascript、css3、html5、React等網頁前端技術與node express mongodb等後端技術，完成多項課程，並利用所學編寫網頁專案練習，熟悉應用．",
   skillTitle: "SKILLS",
   skill1Title: "FRONTEND SKILLS",
   skill2Title: "BACKEND SKILLS",
-  skill3Title: "LANGUAGE"
+  skill3Title: "LANGUAGE",
+  project1Intro: "A blog page base on movie. <br>People can search movies and watch movie trailer, if they like it, they can write a post for the movie and share with others. <br>This project use JavaScript, HTML5, CSS3 for frontend, <br>node.js and express for backend, <br>mongodb for database, <br>and use TMDB api for the movies data.<br>MOVIE BLOG<br>",
+  project2Intro: "A practice project for shopping application. <br>People can search music, add products to the shopping chart, and complete the purchase. <br>This project use React for frontend, <br>node.js and express for backend, <br>mongodb for database, <br>Spotify api for music database, <br>stripe api for payment function.<br>",
+  project3Intro: "This is a practice project for rent house plate. <br>Hoster can make post of their house, and manage orders<br>geust can search houses base on location and date <br>This project use react-redux for frontend, <br>node.js and express for backend, <br>mongodb for database, <br>googlemap api for let map system, <br>facebook auth api for optional login choose"
 };
 
 /***/ }),
@@ -337,7 +343,7 @@ module.exports = {
 // zh-tw
 module.exports = {
   Title: '張佳哲',
-  Introduction: '我是張佳哲',
+  Introduction: '我是一個熱愛學習，喜歡嘗試新事物的人，目前朝向前端工程師邁進。出社會後第一份工作與所學相關，於工程顧問公司擔任結構工程師，負責分析與設計橋樑結構。工作近兩年，但後來發現完成協助工作的小程式增加工作效率比完成工作本身更令我有成就感，故決定離開熟悉的產業，學習程式，希望能讓自己找到志趣相合的工作。',
   projectsTitle: '作品集',
   experiencesTitle: '經歷',
   experience1: "2009 年 9 月 - 2014 年 7 月",
@@ -352,7 +358,10 @@ module.exports = {
   skillTitle: "技能",
   skill1Title: "前端技能",
   skill2Title: "後端技能",
-  skill3Title: "語言"
+  skill3Title: "語言",
+  project1Intro: "練習專案，為電影部落格。 <br>使用者可收尋喜歡的電影，觀賞預告片，登入後可給撰寫觀影心得，也可在其他心得下給予回應。 <br>串接TMDB api 取得電影資料 <br>使用 html5 css3 javascript express ejs <br>資料庫使用 mongoDB",
+  project2Intro: "練習專案，為虛擬音樂購物網站。 <br>使用者可收尋喜歡的音樂專輯或單曲，放入購物車後結帳購買，購買後可於帳號看到購買內容。 <br>串接spotify api 取得音樂資料 strip 處理信用卡交易<br>前端使用 react <br>後端使用 express<br>資料庫使用 mongoDB ",
+  project3Intro: "練習專案，為簡易版租屋平台。 <br>使用者可選擇日期與地點收尋可使用的房屋，也可成為房東上傳自己的房屋。房屋地點會顯示於 google map 上。登入機制可使用 facebook 建立帳號也可自己設定。 <br>串接使用 google map 與 facebook OAuth api <br>前端使用 react-redux <br>後端使用 express <br>資料庫使用 mongodb "
 };
 
 /***/ })

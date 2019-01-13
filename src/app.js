@@ -169,6 +169,9 @@ $('.lang').click((e) => {
     $('#skill1-title').text(I18N[e.target.dataset.lang].skill1Title)
     $('#skill2-title').text(I18N[e.target.dataset.lang].skill2Title)
     $('#skill3-title').text(I18N[e.target.dataset.lang].skill3Title)
+    $('#project1Intro').html(I18N[e.target.dataset.lang].project1Intro)
+    $('#project2Intro').html(I18N[e.target.dataset.lang].project2Intro)
+    $('#project3Intro').html(I18N[e.target.dataset.lang].project3Intro)
 })
 //
 
