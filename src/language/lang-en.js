@@ -17,7 +17,7 @@ module.exports = {
         skill1Title:"FRONT-END SKILLS",
         skill2Title:"BACK-END SKILLS",
         skill3Title:"LANGUAGE",
-        project1Intro:"A blog page base on movie. <br>People can search movies and watch movie trailer, if they like it, they can write a post for the movie and share with others. <br>This project use JavaScript, HTML5, CSS3 for frontend, <br>node.js and express for backend, <br>mongodb for database, <br>and use TMDB api for the movies data.<br>MOVIE BLOG<br>",
+        project1Intro:"A blog page base on movie. <br>People can search movies and watch movie trailer, if they like it, they can write a post for the movie and share with others. <br>This project use JavaScript, HTML5, CSS3 for frontend, <br>node.js and express for backend, <br>mongodb for database, <br>and use TMDB api for the movies data.",
         project2Intro:"A practice project for shopping application. <br>People can search music, add products to the shopping chart, and complete the purchase. <br>This project use React for frontend, <br>node.js and express for backend, <br>mongodb for database, <br>Spotify api for music database, <br>stripe api for payment function.<br>",
         project3Intro:"This is a practice project for rent house plate. <br>Hoster can make post of their house, and manage orders<br>geust can search houses base on location and date <br>This project use react-redux for frontend, <br>node.js and express for backend, <br>mongodb for database, <br>googlemap api for let map system, <br>facebook auth api for optional login choose"
     
