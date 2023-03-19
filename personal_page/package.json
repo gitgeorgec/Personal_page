@@ -1,25 +1,13 @@
 {
   "name": "personal_page",
-  "version": "2.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gitgeorgec/Personal_page.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/gitgeorgec/Personal_page/issues"
-  },
-  "homepage": "https://github.com/gitgeorgec/Personal_page#readme",
   "dependencies": {
     "@types/node": "18.15.3",
     "@types/react": "18.0.28",
