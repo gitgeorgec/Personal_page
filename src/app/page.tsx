@@ -3,16 +3,7 @@ import profile from "../../public/imgs/profile.png";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col container m-auto  pl-2 pr-2 text-emerald-500">
-      <nav className="fixed w-full bg-slate-800 left-0 z-50 bg-opacity-50">
-        <div className="container flex justify-between p-2 m-auto">
-          <div className="font-mono font-extrabold">GEORGE CHANG</div>
-          <ul className="flex">
-            <li className="ml-2">Ploject</li>
-            <li className="ml-2">Linkedin</li>
-          </ul>
-        </div>
-      </nav>
+    <>
       <section className="hero relative flex flex-col sm:flex-row sm:mt-20 justify-center mb-2">
         <div className="flex-shrink-0 w-1/2 flex justify-center items-center absolute sm:relative sm:w-1/2">
           <div className="absoulte text-xl sm:text-3xl">
@@ -99,6 +90,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-    </main>
+    </>
   );
 }
