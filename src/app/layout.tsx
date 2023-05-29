@@ -17,8 +17,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-slate-900`}>
-        <main className="flex min-h-screen flex-col container m-auto pt-10 pl-2 pr-2 text-emerald-500">
+      <body className={`${inter.className}  bg-slate-300 dark:bg-slate-800`}>
+        <main className="flex min-h-screen flex-col container m-auto pt-10 pl-2 pr-2 text-cyan-900 dark:text-emerald-500">
           <nav className="fixed w-full bg-slate-800 left-0 top-0 z-50 bg-opacity-50 h-10">
             <div className="container flex justify-between p-2 m-auto">
               <Link href={"/"}>
