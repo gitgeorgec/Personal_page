@@ -1,3 +1,4 @@
+import Navbar from "@/components/Navbar";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import Link from "next/link";
@@ -16,22 +17,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={`${inter.className}  bg-slate-300 dark:bg-slate-800`}>
-        <main className="flex min-h-screen flex-col container m-auto pt-10 pl-2 pr-2 text-cyan-900 dark:text-emerald-500">
-          <nav className="fixed w-full bg-slate-800 left-0 top-0 z-50 bg-opacity-50 h-10">
-            <div className="container flex justify-between p-2 m-auto">
-              <Link href={"/"}>
-                <div className="font-mono font-extrabold">GEORGE CHANG</div>
+    <html lang="en" className="dark">
+      <body
+        className={`${inter.className} bg-slate-300 dark:bg-slate-800 dark:bg-gradient-to-b from-slate-700 to-slate-950`}
+      >
+        <main className="flex min-h-screen flex-col container max-w-5xl m-auto pt-10 pl-2 pr-2 text-cyan-900 dark:text-emerald-500">
+          <Navbar>
+            <ul className="flex mr-4">
+              <Link href={"/projects"}>
+                <li className="ml-2">Projects</li>
               </Link>
-              <ul className="flex">
-                <Link href={"/projects"}>
-                  <li className="ml-2">Projects</li>
-                </Link>
-                <li className="ml-2">Linkedin</li>
-              </ul>
-            </div>
-          </nav>
+              <li className="ml-2">Linkedin</li>
+            </ul>
+          </Navbar>
           {children}
         </main>
       </body>
