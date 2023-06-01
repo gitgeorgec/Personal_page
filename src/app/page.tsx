@@ -1,7 +1,31 @@
 import Image from "next/image";
 import profile from "../../public/imgs/profile.png";
+import ExperienceBlock from "@/components/ExperiencBlock";
 
 export default function Home() {
+  const GarenaData = {
+    company: "Garena",
+    companyDesc: "leading game brand of south-east asia",
+    title: "Senior Software Engineer(Frontend)",
+    period: { start: "01/2021", end: "current" },
+    works: [
+      `Collaborated with multinational team partners to complete 23 cross-device projects serving millions of players around the world in more than 10 languages using Vue and Typescript.`,
+      `Save construction time by 60% and increase development experience satisfaction by upgrading(webpack -> vite) and maintaining the front-end template with colleagues.`,
+      `Built the game's official website using the server-side rendering framework (Nuxt3) to improve SEO and performance.`,
+      `Boost productivity at least 5% by contributing custom hooks and components to the team.`,
+      `Enhanced product robustness by Conducting code reviews with colleagues and implementing end-to-end testing with Cypress.`,
+    ],
+    techStack: [
+      "javascript",
+      "css3",
+      "html5",
+      "vue",
+      "nuxt",
+      "sass",
+      "webpack",
+      "vite",
+    ].map((name) => ({ path: `/imgs/techs/logos-${name}.svg`, name })),
+  };
   return (
     <>
       <section className="hero relative flex flex-col sm:flex-row sm:mt-20 justify-center mb-2">
@@ -89,6 +113,8 @@ export default function Home() {
             </ul>
           </div>
         </div>
+        <ExperienceBlock {...GarenaData} />
+        <ExperienceBlock {...GarenaData} />
       </section>
     </>
   );
