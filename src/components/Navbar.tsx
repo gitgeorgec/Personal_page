@@ -14,7 +14,7 @@ export default function Navbar({ children }: { children: React.ReactNode }) {
     }
   }, [isDark]);
   return (
-    <nav className="fixed w-full bg-slate-200 left-0 top-0 z-50 bg-opacity-50 h-10 dark:bg-slate-800 dark:bg-opacity-50">
+    <nav className="fixed w-full bg-slate-100 left-0 top-0 z-50 bg-opacity-50 h-10 dark:bg-slate-800 dark:bg-opacity-50">
       <div className="container flex justify-between p-2 m-auto  max-w-5xl">
         <Link href={"/"}>
           <div className="font-mono font-extrabold">GEORGE CHANG</div>

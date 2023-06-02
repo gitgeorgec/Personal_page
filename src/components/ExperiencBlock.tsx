@@ -35,26 +35,28 @@ export default function ExperienceBlock({
         <div>{companyDesc}</div>
         <p>{title}</p>
       </div>
-      <div className="mt-2 text-lg">
+      <div className="tech-stacks flex my-4">
+        {techStack.map(({ path, name }, index) => {
+          return (
+            <div
+              className="h-16 w-16 relative bg-teal-50 rounded-2xl overflow-hidden flex justify-center items-center mr-2"
+              key={index}
+            >
+              <div className="h-12 w-12 relative">
+                <Image src={`${path}`} alt={name} fill={true} />
+              </div>
+            </div>
+          );
+        })}
+      </div>
+      <div className="mt-2 text-xl">
         <ul className="list-disc pl-8">
           {works.map((work, index) => (
-            <li key={index}>{work}</li>
+            <li key={index} className=" mb-4">
+              {work}
+            </li>
           ))}
         </ul>
-        <div className="tech-stacks flex">
-          {techStack.map(({ path, name }, index) => {
-            return (
-              <div
-                className="h-16 w-16 relative bg-white rounded-lg overflow-hidden flex justify-center items-center mr-2"
-                key={index}
-              >
-                <div className="h-14 w-14 relative">
-                  <Image src={`${path}`} alt={name} fill={true} />
-                </div>
-              </div>
-            );
-          })}
-        </div>
       </div>
     </div>
   );

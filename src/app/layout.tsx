@@ -20,9 +20,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} bg-slate-300 dark:bg-slate-800 dark:bg-gradient-to-b from-slate-800 to-slate-950`}
+        className={`${inter.className} bg-slate-200 dark:bg-slate-800 dark:bg-gradient-to-b from-slate-800 to-slate-950`}
       >
-        <main className="flex min-h-screen flex-col container max-w-5xl m-auto pt-10 pl-2 pr-2 text-cyan-900 dark:text-emerald-500">
+        <main className="flex min-h-screen flex-col container max-w-5xl m-auto pt-10 pl-2 pr-2 text-cyan-950 dark:text-emerald-500">
           <Navbar>
             <ul className="flex mr-4 font-bold">
               <Link href={"/projects"}>
