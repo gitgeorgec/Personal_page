@@ -17,13 +17,16 @@ export default function ProjectsPage() {
   }, []);
 
   function handleClick() {
-    console.log(scrollY);
     setScrollY((val) => val + 10);
   }
 
   return (
     <div>
-      <div className="fixed top-0 left-0" onClick={handleClick}>
+      <div
+        className="fixed top-0 left-0 w-screen h-screen"
+        onClick={handleClick}
+        style={{ transform: "scale(0.5)" }}
+      >
         <ThreeBox scrollY={scrollY} />
       </div>
       <div className="h-screen"></div>

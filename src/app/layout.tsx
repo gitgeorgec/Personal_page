@@ -25,10 +25,16 @@ export default function RootLayout({
         <main className="flex min-h-screen flex-col container max-w-5xl m-auto pt-10 pl-2 pr-2 text-cyan-950 dark:text-emerald-500">
           <Navbar>
             <ul className="flex mr-4 font-bold">
-              <Link href={"/projects"}>
+              {/* <Link href={"/projects"}>
                 <li className="ml-2">Projects</li>
+              </Link> */}
+              <Link
+                href={"https://www.linkedin.com/in/chia-che-chang/"}
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <li className="ml-2">Linkedin</li>
               </Link>
-              <li className="ml-2">Linkedin</li>
             </ul>
           </Navbar>
           {children}
