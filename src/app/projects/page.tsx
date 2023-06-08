@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import ThreeBox from "@/components/ThreeBox";
+import BubbleBg from "@/components/BubbleBg";
 
 export default function ProjectsPage() {
   const [scrollY, setScrollY] = useState(0);
@@ -29,7 +30,9 @@ export default function ProjectsPage() {
       >
         <ThreeBox scrollY={scrollY} />
       </div>
-      <div className="h-screen"></div>
+      <div className="h-screen">
+        <BubbleBg />
+      </div>
       <div className="h-screen"></div>
       <div className="h-screen"></div>
     </div>
