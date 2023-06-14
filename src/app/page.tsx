@@ -1,6 +1,7 @@
-import Image from "next/image";
-import profile from "../../public/imgs/profile.png";
+// import Image from "next/image";
+// import profile from "../../public/imgs/profile.png";
 import ExperienceBlock from "@/components/ExperiencBlock";
+import Photo from "@/components/Photo";
 
 const GarenaData = {
   company: "Garena",
@@ -64,11 +65,12 @@ export default function Home() {
           </div>
         </div>
         <div className="ml-auto w-2/3 flex justify-center items-center sm:w-1/2">
-          <Image
+          {/* <Image
             src={profile}
             alt="personal-image"
             className="object-contain"
-          />
+          /> */}
+          <Photo />
         </div>
       </section>
       <section className="experience-section">

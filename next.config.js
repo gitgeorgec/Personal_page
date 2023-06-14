@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export",
+  // output: "export",
   // i18n: {
   //   locales: ["zh-tw", "en"],
   //   defaultLocale: "en",
