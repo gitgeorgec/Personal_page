@@ -1,7 +1,4 @@
-// import Image from "next/image";
-// import photo from "../../public/imgs/photo.svg";
 import ExperienceBlock from "@/components/ExperiencBlock";
-import Photo from "@/components/Photo";
 import ThreePhoto from "@/components/ThreePhoto";
 
 const GarenaData = {
@@ -59,7 +56,7 @@ export default function Home() {
     <>
       <section className="hero relative sm:mt-20 mb-2">
         <div
-          className="absolute w-screen overflow-hidden"
+          className="absolute w-full overflow-hidden"
           style={{ transform: "rotateY(180deg)", height: "100vh", top: "-30%" }}
         >
           <ThreePhoto></ThreePhoto>
@@ -74,11 +71,6 @@ export default function Home() {
             <p>Software Engineer</p>
           </div>
         </div>
-        {/* <div className="ml-auto w-2/3 flex justify-center items-center sm:w-1/2 h-screen"> */}
-        {/* <Image src={photo} alt="personal-image" className="object-contain" /> */}
-
-        {/* <Photo /> */}
-        {/* </div> */}
       </section>
       <section className="experience-section">
         <h2 className="text-2xl uppercase">experiences</h2>

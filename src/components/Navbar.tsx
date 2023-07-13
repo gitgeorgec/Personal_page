@@ -4,7 +4,7 @@ import Link from "next/link";
 import ToggleButton from "./ToggleButton";
 
 export default function Navbar({ children }: { children: React.ReactNode }) {
-  const [isDark, setIsDark] = useState(false);
+  const [isDark, setIsDark] = useState(true);
 
   useEffect(() => {
     if (isDark) {
