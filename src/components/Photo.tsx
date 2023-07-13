@@ -14,16 +14,16 @@ function Photo() {
         gsap.fromTo(
           "svg polygon",
           {
-            x: "random(-30, 30)",
-            y: "random(-30, 30)",
-            stagger: 0.003,
+            x: "random(-20, 20)",
+            y: "random(-20, 20)",
+            stagger: 0.002,
             opacity: 0,
           },
           {
             x: 0,
             y: 0,
-            stagger: 0.003,
-            duration: 0.6,
+            stagger: 0.002,
+            duration: 1,
             opacity: 1,
           }
         );
@@ -43,8 +43,10 @@ function Photo() {
       xmlns="http://www.w3.org/2000/svg"
       version="1.1"
       id="photo"
-      className="w-full"
+      className="h-full"
+      viewBox="0 0 644 982"
       style={{ aspectRatio: "644/982" }}
+      preserveAspectRatio="xMidYMid meet"
       onClick={handleUpdate}
     >
       <polygon
@@ -27339,7 +27341,7 @@ function Photo() {
         data-svg-origin="358 858"
         transform="matrix(1,0,0,1,0,0)"
       ></polygon>
-      {/*  <polygon
+      <polygon
         points="386,658 392,690 417,672"
         fill="#02041d"
         stroke="#02041d"
@@ -28767,7 +28769,7 @@ function Photo() {
         data-svg-origin="438 538"
         transform="matrix(1,0,0,1,0,0)"
       ></polygon>
-     <polygon
+      <polygon
         points="434,550 434,552 440,546"
         fill="#200621"
         stroke="#200621"
@@ -30553,8 +30555,8 @@ function Photo() {
         strokeLinejoin="miter"
         data-svg-origin="458 600"
         transform="matrix(1,0,0,1,0,0)"
-      ></polygon> */}
-      {/* <polygon
+      ></polygon>
+      <polygon
         points="458,594 456,598 478,600"
         fill="#050827"
         stroke="#050827"
@@ -37977,7 +37979,7 @@ function Photo() {
         strokeLinejoin="miter"
         data-svg-origin="244 985"
         transform="matrix(1,0,0,1,0,0)"
-      ></polygon> */}
+      ></polygon>
     </svg>
   );
 }

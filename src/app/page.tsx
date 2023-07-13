@@ -1,7 +1,8 @@
 // import Image from "next/image";
-// import profile from "../../public/imgs/profile.png";
+// import photo from "../../public/imgs/photo.svg";
 import ExperienceBlock from "@/components/ExperiencBlock";
 import Photo from "@/components/Photo";
+import ThreePhoto from "@/components/ThreePhoto";
 
 const GarenaData = {
   company: "Garena",
@@ -13,7 +14,7 @@ const GarenaData = {
     `Save construction time by 60% and increase development experience satisfaction by upgrading(webpack -> vite) and maintaining the front-end template with colleagues.`,
     `Built the game's official website using the server-side rendering framework (Nuxt3) to improve SEO and performance.`,
     `Boost productivity at least 5% by contributing custom hooks and components to the team.`,
-    `Enhanced product robustness by Conducting code reviews with colleagues and implementing end-to-end testing with Cypress.`,
+    `Enhanced product robustness by conducting code reviews with colleagues and implementing end-to-end testing with Cypress.`,
   ],
   techStack: [
     "html5",
@@ -56,22 +57,28 @@ const LjitData = {
 export default function Home() {
   return (
     <>
-      <section className="hero relative flex flex-col sm:flex-row sm:mt-20 justify-center mb-2">
-        <div className="flex-shrink-0 w-1/2 flex justify-center items-center absolute sm:relative sm:w-1/2">
-          <div className="absoulte text-xl sm:text-3xl">
+      <section className="hero relative sm:mt-20 mb-2">
+        <div
+          className="absolute w-screen overflow-hidden"
+          style={{ transform: "rotateY(180deg)", height: "100vh", top: "-30%" }}
+        >
+          <ThreePhoto></ThreePhoto>
+        </div>
+        <div
+          className="flex-shrink-0 w-1/2 flex justify-center items-center sm:relative sm:w-1/2"
+          style={{ height: "70vh" }}
+        >
+          <div className="absoulte text-xl sm:text-3xl left-3">
             HELLO! I AM GEORGE
             <br />
             <p>Software Engineer</p>
           </div>
         </div>
-        <div className="ml-auto w-2/3 flex justify-center items-center sm:w-1/2">
-          {/* <Image
-            src={profile}
-            alt="personal-image"
-            className="object-contain"
-          /> */}
-          <Photo />
-        </div>
+        {/* <div className="ml-auto w-2/3 flex justify-center items-center sm:w-1/2 h-screen"> */}
+        {/* <Image src={photo} alt="personal-image" className="object-contain" /> */}
+
+        {/* <Photo /> */}
+        {/* </div> */}
       </section>
       <section className="experience-section">
         <h2 className="text-2xl uppercase">experiences</h2>
