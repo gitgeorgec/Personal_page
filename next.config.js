@@ -5,6 +5,7 @@ const nextConfig = {
   //   locales: ["zh-tw", "en"],
   //   defaultLocale: "en",
   // },
+  basePath: "/Personal_page",
 };
 
 module.exports = nextConfig;
