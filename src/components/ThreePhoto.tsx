@@ -1,6 +1,7 @@
 "use client";
 import { useRef, useMemo, useEffect, Suspense } from "react";
 import { Canvas, useLoader } from "@react-three/fiber";
+// import { SVGLoader, SVGResult } from "three/examples/jsm/loaders/SVGLoader";
 import { SVGLoader, SVGResult } from "three/examples/jsm/loaders/SVGLoader";
 import type { Color, Shape } from "three";
 import gsap from "gsap";

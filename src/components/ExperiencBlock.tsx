@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 interface ExperienceBlockProps {
   company: string;
   companyDesc: string;
@@ -43,7 +41,7 @@ export default function ExperienceBlock({
               key={index}
             >
               <div className="h-12 w-12 relative">
-                <Image src={`${path}`} alt={name} fill={true} />
+                <img src={`${path}`} alt={name} />
               </div>
             </div>
           );
