@@ -41,7 +41,7 @@ export default function ExperienceBlock({
               key={index}
             >
               <div className="h-12 w-12 relative">
-                <img src={`${path}`} alt={name} />
+                <img className="h-full w-full" src={`${path}`} alt={name} />
               </div>
             </div>
           );

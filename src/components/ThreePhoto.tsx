@@ -1,10 +1,9 @@
-"use client";
 import { useRef, useMemo, useEffect, Suspense } from "react";
 import { Canvas, useLoader } from "@react-three/fiber";
-// import { SVGLoader, SVGResult } from "three/examples/jsm/loaders/SVGLoader";
-import { SVGLoader, SVGResult } from "three/examples/jsm/loaders/SVGLoader";
+import { SVGLoader, SVGResult } from "three/examples/jsm/loaders/SVGLoader.js";
 import type { Color, Shape } from "three";
 import gsap from "gsap";
+import photo from "/imgs/photo.svg";
 
 function ShapeMesh({
   shape,
@@ -64,7 +63,7 @@ function ShapeMesh({
 }
 
 function Scene() {
-  const data = useLoader(SVGLoader, "/imgs/photo.svg");
+  const data = useLoader(SVGLoader, photo);
 
   const shapes = useMemo(
     () =>
