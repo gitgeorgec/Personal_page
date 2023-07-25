@@ -25,7 +25,10 @@ const GarenaData = {
     "webpack",
     "vite",
     "cypress",
-  ].map((name) => ({ path: `/imgs/techs/logos-${name}.svg`, name })),
+  ].map((name) => ({
+    path: `${import.meta.env.BASE_URL}imgs/techs/logos-${name}.svg`,
+    name,
+  })),
 };
 const LjitData = {
   company: "Ljit Information Technology",
@@ -50,8 +53,12 @@ const LjitData = {
     "redux-observable",
     "jest",
     "ant-design",
-  ].map((name) => ({ path: `/imgs/techs/logos-${name}.svg`, name })),
+  ].map((name) => ({
+    path: `${import.meta.env.BASE_URL}/imgs/techs/logos-${name}.svg`,
+    name,
+  })),
 };
+
 export default function Home() {
   return (
     <RootLayout>
