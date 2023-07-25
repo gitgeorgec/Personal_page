@@ -63,11 +63,11 @@ function ShapeMesh({
 }
 
 function Scene() {
-  const data = useLoader(SVGLoader, photo);
+  const data = useLoader(SVGLoader, photo) as SVGResult;
 
   const shapes = useMemo(
     () =>
-      (data as SVGResult).paths.flatMap((g, index) =>
+      data.paths.flatMap((g, index) =>
         g.toShapes(true).map((shape) => ({ shape, color: g.color, index }))
       ),
     [data]
