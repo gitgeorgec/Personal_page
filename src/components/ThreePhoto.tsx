@@ -86,7 +86,7 @@ function Scene() {
 
 export default function CanvasBox() {
   return (
-    <div className="h-screen">
+    <div className="h-full">
       <Canvas
         flat
         linear

@@ -62,16 +62,20 @@ const LjitData = {
 export default function Home() {
   return (
     <RootLayout>
-      <section className="hero relative sm:mt-20 mb-2">
+      <section className="hero relative overflow-hidden">
         <div
-          className="absolute w-full overflow-hidden"
-          style={{ transform: "rotateY(180deg)", height: "100vh", top: "-30%" }}
+          className="absolute w-full overflow-hidden left-3"
+          style={{
+            transform: "rotateY(180deg)",
+            height: "60vh",
+            marginTop: "-12vh",
+          }}
         >
           <ThreePhoto></ThreePhoto>
         </div>
         <div
           className="flex-shrink-0 w-1/2 flex justify-center items-center sm:relative sm:w-1/2"
-          style={{ height: "70vh" }}
+          style={{ height: "40vh" }}
         >
           <div className="absoulte text-xl sm:text-3xl left-3">
             HELLO! I AM GEORGE
