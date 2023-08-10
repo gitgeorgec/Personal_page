@@ -1,6 +1,7 @@
 import RootLayout from "./components/RootLayout";
 import ExperienceBlock from "./components/ExperiencBlock";
 import ThreePhoto from "./components/ThreePhoto";
+import ShuffleText from "./components/ShuffleText";
 
 const GarenaData = {
   company: "Garena",
@@ -74,13 +75,19 @@ export default function Home() {
           <ThreePhoto></ThreePhoto>
         </div>
         <div
-          className="flex-shrink-0 w-1/2 flex justify-center items-center sm:relative sm:w-1/2"
-          style={{ height: "40vh" }}
+          className="flex-shrink-0 w-1/2 flex justify-center items-center sm:relative sm:w-1/2 relative"
+          style={{ height: "40vh", zIndex: 10 }}
         >
-          <div className="absoulte text-xl sm:text-3xl left-3">
-            HELLO! I AM GEORGE
+          <div className="absoulte text-base  sm:text-xl left-3">
+            <ShuffleText text="HELLO! I AM GEORGE"></ShuffleText>
             <br />
-            <p>Software Engineer</p>
+            <div className="text-blue-800 dark:text-slate-400 sm:text-lg text-xs ">
+              <ShuffleText text="I am a passionate frontend engineer"></ShuffleText>
+              <ShuffleText text="with 4 years experience"></ShuffleText>
+              <ShuffleText text="dedicated to creating"></ShuffleText>
+              <ShuffleText text="engaging digital experiences."></ShuffleText>
+            </div>
+            {/* <ShuffleText text="Software Engineer"></ShuffleText> */}
           </div>
         </div>
       </section>

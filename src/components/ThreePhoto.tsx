@@ -25,12 +25,12 @@ function ShapeMesh({
         x: "random(70, 140)",
         y: "random(340, 460)",
         duration: 0.5,
-        delay: index * 0.002,
+        delay: index * 0.0005,
       },
       {
         x: 100,
         y: 400,
-        delay: index * 0.002,
+        delay: index * 0.0005,
         duration: 0.5,
       }
     );
@@ -39,11 +39,11 @@ function ShapeMesh({
       {
         opacity: 0,
         duration: 0.5,
-        delay: index * 0.002,
+        delay: index * 0.0005,
       },
       {
         opacity: 1,
-        delay: index * 0.002,
+        delay: index * 0.0005,
         duration: 0.5,
       }
     );

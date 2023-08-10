@@ -23,15 +23,19 @@ export default function ExperienceBlock({
 }: ExperienceBlockProps) {
   return (
     <div className="work-experience mb-8">
-      <div className="text-xl font-bold border-l-4 border-cyan-800 pl-4">
-        <h3 className="flex justify-between text-2xl ">
+      <div className="text-xl font-bold">
+        <h3 className="flex justify-between text-2xl border-l-4 border-cyan-800 pl-4 items-center">
           {company}
-          <span className=" font-normal">
+          <span className="text-base text-blue-800 dark:text-slate-400 font-normal">
             {period.start} - {period.end}
           </span>
         </h3>
-        <div>{companyDesc}</div>
-        <p>{title}</p>
+        <div className="border-l-4 text-sm border-cyan-800 pl-4 text-blue-800 dark:text-slate-400 font-normal">
+          {companyDesc}
+        </div>
+        <p className="border-l-4 text-sm border-cyan-800 pl-4 text-blue-800 dark:text-slate-400 font-normal">
+          {title}
+        </p>
       </div>
       <div className="mt-2 text-xl">
         <ul className="list-disc pl-8">
@@ -46,10 +50,10 @@ export default function ExperienceBlock({
         {techStack.map(({ path, name }, index) => {
           return (
             <div
-              className="h-10 w-10 relative bg-teal-50 rounded-2xl overflow-hidden flex justify-center items-center m-1"
+              className="h-12 w-12 relative bg-teal-50 rounded-2xl overflow-hidden flex justify-center items-center m-1"
               key={index}
             >
-              <div className="h-8 w-8 relative">
+              <div className="h-10 w-10 relative">
                 <img className="h-full w-full" src={`${path}`} alt={name} />
               </div>
             </div>
