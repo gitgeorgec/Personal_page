@@ -1,7 +1,8 @@
+import React from "react";
 import RootLayout from "./components/RootLayout";
 import ExperienceBlock from "./components/ExperiencBlock";
-import ThreePhoto from "./components/ThreePhoto";
 import ShuffleText from "./components/ShuffleText";
+const ThreePhoto = React.lazy(() => import("./components/ThreePhoto"));
 
 const GarenaData = {
   company: "Garena",

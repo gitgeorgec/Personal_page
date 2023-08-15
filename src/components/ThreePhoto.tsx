@@ -2,8 +2,8 @@ import { useRef, useMemo, useEffect, Suspense } from "react";
 import { Canvas, useLoader } from "@react-three/fiber";
 import { SVGLoader, SVGResult } from "three/examples/jsm/loaders/SVGLoader.js";
 import type { Color, Shape } from "three";
-import gsap from "gsap";
 import photo from "/imgs/photo.svg";
+import gsap from "gsap";
 
 function ShapeMesh({
   shape,
