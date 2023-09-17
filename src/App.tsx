@@ -1,7 +1,6 @@
 import React from "react";
 import RootLayout from "./components/RootLayout";
 import ExperienceBlock from "./components/ExperiencBlock";
-import ShuffleText from "./components/ShuffleText";
 const ThreePhoto = React.lazy(() => import("./components/ThreePhoto"));
 
 const GarenaData = {
@@ -10,11 +9,12 @@ const GarenaData = {
   title: "Senior Software Engineer(Frontend)",
   period: { start: "01/2021", end: "current" },
   works: [
-    `Collaborated with multinational team partners to complete 23 cross-device projects serving millions of players around the world in more than 10 languages using Vue and Typescript.`,
-    `Save construction time by 60% and increase development experience satisfaction by upgrading(webpack -> vite) and maintaining the front-end template with colleagues.`,
-    `Built the game's official website using the server-side rendering framework (Nuxt3) to improve SEO and performance.`,
-    `Boost productivity at least 5% by contributing custom hooks and components to the team.`,
-    `Enhanced product robustness by conducting code reviews with colleagues and implementing end-to-end testing with Cypress.`,
+    "Collaborated with a multinational team to successfully deliver cross-device projects, catering to millions of players worldwide in over 10 languages, utilizing Vue and Typescript.",
+    "Enhanced team productivity by at least 15% through the development of shared components.",
+    "Improved product robustness by conducting code reviews with colleagues and implementing end-to-end testing with Cypress.",
+    "Built the game's official website using the server-side rendering framework (Nuxt3) to improve SEO and performance.",
+    "Managed and upgraded the event management system.",
+    "Played a pivotal role in estimating project timelines for upcoming team projects.",
   ],
   techStack: [
     "html5",
@@ -80,13 +80,15 @@ export default function Home() {
           style={{ height: "40vh", zIndex: 10 }}
         >
           <div className="absoulte text-base  sm:text-xl left-3">
-            <ShuffleText text="HELLO! I AM GEORGE"></ShuffleText>
+            HELLO! I AM GEORGE
             <br />
             <div className="text-blue-800 dark:text-slate-400 sm:text-lg text-xs ">
-              <ShuffleText text="I am a passionate frontend engineer"></ShuffleText>
+              {/* <ShuffleText text="I am a passionate frontend engineer"></ShuffleText>
               <ShuffleText text="with 4 years experience"></ShuffleText>
               <ShuffleText text="dedicated to creating"></ShuffleText>
-              <ShuffleText text="engaging digital experiences."></ShuffleText>
+              <ShuffleText text="engaging digital experiences."></ShuffleText> */}
+              I am a passionate frontend engineer with 4 years experience
+              dedicated to creating engaging digital experiences.
             </div>
             {/* <ShuffleText text="Software Engineer"></ShuffleText> */}
           </div>
