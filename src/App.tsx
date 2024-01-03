@@ -9,12 +9,12 @@ const GarenaData = {
   title: "Senior Software Engineer(Frontend)",
   period: { start: "01/2021", end: "current" },
   works: [
-    "Collaborated with a multinational team to successfully deliver cross-device projects, catering to millions of players worldwide in over 10 languages, utilizing Vue and Typescript.",
-    "Enhanced team productivity by at least 15% through the development of shared components.",
-    "Improved product robustness by conducting code reviews with colleagues and implementing end-to-end testing with Cypress.",
-    "Built the game's official website using the server-side rendering framework (Nuxt3) to improve SEO and performance.",
-    "Managed and upgraded the event management system.",
-    "Played a pivotal role in estimating project timelines for upcoming team projects.",
+    "Develop and maintain cross-device projects, using Vue, React, and Typescript to support millions of global players.",
+    "Optimized team productivity by 5% through the development of collaborative, reusable components",
+    "Build the official game website using the server-side rendering framework (Nuxt3) to enhance SEO and performance.",
+    "Maintain and upgraded the event project management system with a focus on efficiency and user experience.",
+    "Played a central role in project timeline estimation for upcoming initiatives.",
+    "Elevated product quality and reliability by actively conducting code reviews, ensuring a robust and bug-free user experience.",
   ],
   techStack: [
     "html5",
@@ -41,7 +41,7 @@ const LjitData = {
     `Use React, React-redux and Redux-observable for front-end development and collaborate with the back-end team to complete 4 projects through git-flow.`,
     `Upgraded React16 to React17, rewriting class base components to function base and hooks, reducing code size by 30% and increasing productivity`,
     `Increase project performance by refactoring code with better rendering practices.`,
-    `Contribute to the company's internal UI library, making 30+pull requests and writing tests for components with jest.`,
+    `Contribute to the company's internal UI library, making 30+ pull requests.`,
   ],
   techStack: [
     "html5",
