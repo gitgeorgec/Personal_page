@@ -11,7 +11,7 @@ function Box(props: ThreeElements["mesh"]) {
   const [hoverd, setHover] = useState(false);
   const [active, setActive] = useState(false);
   // const texture = useLoader(TextureLoader, "/imgs/techs/logos-react.svg");
-  const texture = useLoader(TextureLoader, "/imgs/techs/reactjs.png");
+  const texture = useLoader(TextureLoader, "./imgs/techs/reactjs.png");
 
   useFrame((state, delta) => (mesh.current!.rotation.x += delta));
 

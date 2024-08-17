@@ -24,7 +24,7 @@ const GarenaData = {
     "webpack",
     "vite",
     "cypress",
-  ].map((name) => ({ path: `/imgs/techs/logos-${name}.svg`, name })),
+  ].map((name) => ({ path: `./imgs/techs/logos-${name}.svg`, name })),
 };
 const LjitData = {
   company: "Ljit Information Technology",

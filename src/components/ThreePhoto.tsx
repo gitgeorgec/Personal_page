@@ -63,7 +63,7 @@ function ShapeMesh({
 }
 
 function Scene() {
-  const data = useLoader(SVGLoader, "/imgs/photo.svg");
+  const data = useLoader(SVGLoader, "./imgs/photo.svg");
 
   const shapes = useMemo(
     () =>
