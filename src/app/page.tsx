@@ -49,7 +49,7 @@ const LjitData = {
     "redux-observable",
     "jest",
     "ant-design",
-  ].map((name) => ({ path: `/imgs/techs/logos-${name}.svg`, name })),
+  ].map((name) => ({ path: `./imgs/techs/logos-${name}.svg`, name })),
 };
 export default function Home() {
   return (
